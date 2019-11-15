@@ -13,17 +13,14 @@ services:
 matrix:
    include:
       - os: linux
-        env: PROJ=opencv,artoolkitplus,chilitags,flandmark linux-armhf
+	arch: amd64
+        env: PROJ=artoolkitplus OS=linux-armhf
         install: true
         script: ./ci/install-travis.sh
-      - os: linux
-        env: PROJ=ffmpeg OS=linux-armhf
-        install: true
-        script: ./ci/install-travis.sh
-   allow_failures:
+     allow_failures:
       - os: linux
         arch: arm64
-        env: PROJ=opencv,artoolkitplus,chilitags,flandmark OS=linux-armhf
+        env: PROJ=artoolkitplus OS=linux-armhf
         install: true
         script: ./ci/install-travis.sh
 
