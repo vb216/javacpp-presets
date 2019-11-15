@@ -20,7 +20,7 @@ matrix:
         env: PROJ=ffmpeg OS=linux-armhf
         install: true
         script: ./ci/install-travis.sh
-     allow_failures:
+   allow_failures:
       - os: linux
         arch: arm64
         env: PROJ=opencv,artoolkitplus,chilitags,flandmark OS=linux-armhf
