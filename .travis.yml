@@ -13,6 +13,7 @@ services:
 matrix:
    include:
       - os: linux
+        arch: arm64
         env: PROJ=artoolkitplus linux-armhf
         install: true
         script: ./ci/install-travis.sh
