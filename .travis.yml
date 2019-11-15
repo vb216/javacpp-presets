@@ -17,7 +17,7 @@ matrix:
         env: PROJ=artoolkitplus OS=linux-armhf
         install: true
         script: ./ci/install-travis.sh
-     allow_failures:
+   allow_failures:
       - os: linux
         arch: arm64
         env: PROJ=artoolkitplus OS=linux-armhf
