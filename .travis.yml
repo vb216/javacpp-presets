@@ -16,7 +16,7 @@ matrix:
          apt:
           packages: maven
         arch: arm64
-        env: PROJ=artoolkitplus linux-armhf
+        env: PROJ=flycapture OS=linux-armhf
         install: true
         language: minimal
         script: "sudo add-apt-repository ppa:openjdk-r/ppa; sudo apt-get update; sudo apt install openjdk-11-jdk-headless; ./ci/install-travis.sh"
